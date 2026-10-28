@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-10-28T22:46:23.343411+00:00",
+  "status": "PASS_SCOPED_GITHUB_EDITION",
+  "grade": 4,
+  "pages": 5,
+  "criteria": {
+    "correctness": "PASS: all numerical tokens match the reviewed source and all referenced figure bytes match",
+    "rendered_layout": "PASS: all current pages inspected in rendered review sheets; no clipped text, overlap or missing figures observed",
+    "privacy": "PASS: source and extracted PDF text scanned; no attachments or JavaScript; only explicit reviewed files included",
+    "scope": "PASS: independent study only; not peer reviewed; formal-publication projects excluded"
+  },
+  "base_analysis_commit": "9609421480d5b0d4a89e87841076df7cd1826bfd",
+  "public_files_sha256": {
+    "paper/main.tex": "c689c0213d71fcd2ca28cea17287d314707385e198cc96d50e40734f9d66a430",
+    "paper/manuscript.pdf": "8515a426c9abad08405724ae2c9ffff0543506adb4527a7a5142bb3dc6cd1262",
+    "paper/images/abstention-frontier.pdf": "897c4c1e368a8aa9f066ab189714d3f18e5be48edafde76efd710a449b11644f",
+    "paper/images/decision-summary.pdf": "63aab0b370a44c746198799b6c7be6e8649c30c042c2c44daa80be66e174bd53"
+  },
+  "limitations": "This is a publication-format check. It reuses unchanged scientific evidence and does not establish peer review, novelty, deployment or universal secret detection."
+}

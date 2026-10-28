@@ -1,5 +1,7 @@
 # Sensor loss and the decision to request another measurement
 
+[Research manuscript: PDF and LaTeX](paper/README.md)
+
 **Corrected retrospective evaluation (N1).** The original L-BFGS-B-only candidate failed Linux refitting. A validation-only probe found insufficient optimization precision. The same logistic objectives now use Newton-Cholesky with independent gradient, Hessian and frozen-probability checks. All model grids, participant splits, decision thresholds and replay tolerances remain fixed; selected configurations and thresholds are unchanged. Original outputs and failures remain in Git history and [the correction evidence](results/corrections). This reused test is not described as untouched.
 
 **Finding:** training with missing sensors improves classification and coverage on unseen participants, but a confidence cutoff that meets 90% retained-window accuracy on validation fails that target under both test sensor-loss conditions. A high-confidence subset can still be unreliable after input loss.
@@ -69,4 +71,4 @@ The study uses one historical smartphone setup, instructed activities and a smal
 
 The comparison is between validation-selected configured systems. Augmented row counts change the effective L2 penalty at fixed C, so the result does not isolate a causal effect of augmentation alone. A matched-penalty ablation on a new cohort remains future work.
 
-This is independent, AI-assisted research. Manuscript drafts remain private and outside Git history. Public code, licensed source excerpts, predictions, figures and checks provide the inspectable portfolio evidence.
+This is independent, AI-assisted research. The independent research manuscript is available in [PDF and LaTeX](paper/README.md); it has not been peer reviewed. Public code, licensed source excerpts, predictions, figures and checks provide the inspectable portfolio evidence.

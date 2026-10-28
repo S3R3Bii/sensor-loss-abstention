@@ -1,0 +1,12 @@
+{
+  "scope": "independent-program-study",
+  "study_id": "38",
+  "formal_submission_target": false,
+  "authorization": "Owner explicitly authorized GitHub publication of these study manuscripts on 28 October 2026; formal-publication projects including Azure optimization remain excluded.",
+  "public_files": {
+    "paper/main.tex": "c689c0213d71fcd2ca28cea17287d314707385e198cc96d50e40734f9d66a430",
+    "paper/manuscript.pdf": "8515a426c9abad08405724ae2c9ffff0543506adb4527a7a5142bb3dc6cd1262",
+    "paper/images/abstention-frontier.pdf": "897c4c1e368a8aa9f066ab189714d3f18e5be48edafde76efd710a449b11644f",
+    "paper/images/decision-summary.pdf": "63aab0b370a44c746198799b6c7be6e8649c30c042c2c44daa80be66e174bd53"
+  }
+}

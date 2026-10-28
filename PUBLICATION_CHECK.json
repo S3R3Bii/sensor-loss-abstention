@@ -1,18 +1,18 @@
 {
-  "timestamp_utc": "2026-10-28T21:52:42.105407+00:00",
+  "timestamp_utc": "2026-10-28T22:48:02.718100+00:00",
   "status": "PASS_BOUNDED_SCAN",
-  "files_checked": 94,
-  "scope": "Intended tracked/nonignored files; decompressed text; forbidden paths/extensions, high-confidence key and private machine path patterns; local Markdown links. Image/PDF contents require separate visual/source review. This is not universal secret detection.",
+  "files_checked": 101,
+  "scope": "Exact staged Git index bytes; decompressed text; forbidden paths/extensions, high-confidence key and private machine path patterns; local Markdown links. Image/PDF contents require separate visual/source review. This is not universal secret detection.",
   "findings": [],
   "sha256": {
-    ".gitattributes": "923cde36463a1d827f8a6f246e8a1e373c50c89aa917404df09d8569a5fdff73",
+    ".gitattributes": "ffb51dbcdc1acfbe42386e776d1ee224e88c870fcc6262396f12b3ea949a5eff",
     ".github/workflows/verify.yml": "be6e9adf713cda5f1f919b8007a88e92af542bb6d576c4db971459cfd0eb99a5",
-    ".gitignore": "592f57e2b8f6eaeb139c4b9d93fed92f02426e43838c4f35f310e4d5777c12b5",
+    ".gitignore": "52937fe4dd5446551d9e3930f359334ae48c3acf9371f5d725725bb623a4cae7",
     "CODE_STYLE_CHECK.json": "be05dd3e4ddceaf9ddde7c9eb387d7bf60e4007ef685a4132c83ae53c7aa05d1",
-    "MODEL_VALIDATION_STANDARD.md": "23f24302cefcf1ddf374c03236ce5ffc85943fdaece43f58826ddfe5b0edf8a4",
+    "MODEL_VALIDATION_STANDARD.md": "40f9cab5117e572ed4727620e8952269c40e3118c117d6c0ea438aead3195c01",
     "PROTOCOL.md": "b563eeb385c8ce09bda427a305e1aefea0aa2ab2ecf3441a16086bea63eeabe7",
-    "README.md": "4a5c796bb2b6b495aede25b67b9483a1b667d1d7f05d5d2f2f07d8a3253adb8f",
-    "SOURCES.md": "261fafab2cd523ce9e2614128d20f351bc4ecf6e0f1ca984447c9fa4dc768477",
+    "README.md": "d2f8bd47c31078abcad2ebc00c4bbcdb3b713c7df7cc499ea563e2a10e41fdc8",
+    "SOURCES.md": "0fca3d0d5c36a6daad543935c1d7b8787cb9951a5ccefbd48d8fea1fc4d2651a",
     "data/manifest.json": "2eaa7bdfa7de0527f846b406a4babce2b3bcad64e60834b022ed90a8a02c5b08",
     "data/source/README.txt.gz": "7b56a89faeef0f53ec872e780910eeefa4c433b79ab6d5e17c85e52752a43efb",
     "data/source/activity_labels.txt.gz": "5f10d039ec3fc60b4f1846443781fd6664ef6ce9dd74b984564626274cea69c2",
@@ -46,6 +46,13 @@
     "figures/optimization-evidence.png": "8b79262afbe9e3d39374878fa618fc01f5d6845fcd69b548de74bb8aae875d3b",
     "figures/reliability-and-participants.pdf": "13d74b33b2bb4f2fc99aa0765461d7de3df5f9b0f76ba543304cfede9a4175a0",
     "figures/reliability-and-participants.png": "c8f41aa412fe5e5d72dd681b24f76718019bc361692ccd2fe36c9494196fabea",
+    "paper/PUBLICATION_SCOPE.json": "3eabd68a01e8ecfc530eaa898a8f98accbdb808d26ab04b82be1f72f1bae8bad",
+    "paper/README.md": "f6d1434988c3b1ad045fd2a160abfd2eafb8fcdb2b0b2e6784ed4210265509b1",
+    "paper/REVIEW.json": "325325fcbc4a797a85e479fcc67cd08c7a4e48916b5fe4ccc4ed2d929140f727",
+    "paper/images/abstention-frontier.pdf": "897c4c1e368a8aa9f066ab189714d3f18e5be48edafde76efd710a449b11644f",
+    "paper/images/decision-summary.pdf": "63aab0b370a44c746198799b6c7be6e8649c30c042c2c44daa80be66e174bd53",
+    "paper/main.tex": "c689c0213d71fcd2ca28cea17287d314707385e198cc96d50e40734f9d66a430",
+    "paper/manuscript.pdf": "8515a426c9abad08405724ae2c9ffff0543506adb4527a7a5142bb3dc6cd1262",
     "requirements.txt": "56931f1c4e5f9d528ab2a678eb1c5225ab56239affb8eddd5790875e6b413329",
     "results/INDEPENDENT_OPTIMIZATION_CHECK.json": "fd57455c269234db9eb090d2306c14aa73ca422776a40f48d6568fdca0550e70",
     "results/INDEPENDENT_PRESENTATION_CHECK.json": "f9a2fe8c56197e4b6caeed9d7a0408d9062b9e99e17fc08b6bc32e70dfc38a69",
@@ -99,5 +106,11 @@
     "tests/test_contracts.py": "087b22883a9dff9f9be51b76a2df7b5922ea55e4b929e2bd3573322691bdbe8c"
   },
   "raw_source_members_excluded": true,
-  "manuscripts_excluded": true
+  "unapproved_manuscripts_excluded": true,
+  "approved_independent_paper_files": [
+    "paper/images/abstention-frontier.pdf",
+    "paper/images/decision-summary.pdf",
+    "paper/main.tex",
+    "paper/manuscript.pdf"
+  ]
 }

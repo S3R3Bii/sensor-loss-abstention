@@ -5,3 +5,6 @@ results/** -text whitespace=cr-at-eol
 *.py text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
+
+# Keep reviewed manuscript and manifest bytes identical across platforms.
+paper/** -text whitespace=cr-at-eol
