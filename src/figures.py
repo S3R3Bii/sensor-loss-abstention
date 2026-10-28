@@ -44,6 +44,13 @@ labels = ["Intact sensors", "Accelerometer missing", "Gyroscope missing"]
 
 
 def save(fig, name):
+    fig.text(
+        0.01,
+        1.12,
+        "N1 CORRECTED RETROSPECTIVE · UCI measured windows, controlled missing-sensor scenarios",
+        fontsize=9,
+        color="#526273",
+    )
     fig.savefig(F / f"{name}.png", dpi=180, bbox_inches="tight")
     fig.savefig(F / f"{name}.pdf", bbox_inches="tight")
     plt.close(fig)

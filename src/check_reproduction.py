@@ -42,6 +42,7 @@ with tempfile.TemporaryDirectory(prefix="sensor-reproduction-") as folder:
         ("verify_optimization.py", []),
         ("analyze.py", ["test"]),
         ("verify.py", ["test"]),
+        ("verify_presentation.py", []),
         ("figures.py", []),
     ]:
         subprocess.run(

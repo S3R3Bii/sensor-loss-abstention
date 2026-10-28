@@ -9,12 +9,12 @@
     },
     {
       "path": "src/check_reproduction.py",
-      "sha256": "943b86f2f33ec090252a4150ce413ad421d9bf9695cd11a7fb1bc42b127ea9e9",
+      "sha256": "9eaa3eed1d04dd5900bda6091d9cd1c3ba4a29b29332e137ed56d7f36cbbae43",
       "exact_ast_equal": true
     },
     {
       "path": "src/figures.py",
-      "sha256": "e0de1371928418c12dd5fa42ff50284ffeb443537f5955498abb9604530319e0",
+      "sha256": "5187824cf02db7476561427740654acf15ac31a70c88b262fcdfc6b241c861f2",
       "exact_ast_equal": true
     },
     {
@@ -40,6 +40,11 @@
     {
       "path": "src/verify_optimization.py",
       "sha256": "4c9284271360d0e27c5e02093ed9128e81e2537686e453a5599c59b4edf1834a",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/verify_presentation.py",
+      "sha256": "5c01593be61a2a5650750dbecbe371415a46e2e52a6e0c72350e8167f1a5a72f",
       "exact_ast_equal": true
     },
     {

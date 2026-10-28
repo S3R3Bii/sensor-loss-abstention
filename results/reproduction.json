@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Corrected retrospective N1; full candidate refits and independent optimization/metric checks",
+  "candidate_rows": 17,
+  "logistic_models_reconstructed": 8,
+  "relative_tolerance": 1e-07,
+  "absolute_tolerance": 1e-09,
+  "end_to_end_seconds": 45.70104210003046,
+  "timing_and_iteration_counts": "Retained diagnostics, not cross-platform equality targets",
+  "test_reuse_disclosed": true
+}
