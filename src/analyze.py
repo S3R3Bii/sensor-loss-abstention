@@ -228,6 +228,13 @@ def validate():
 
 def test():
     selection = json.loads((R / "selection.json").read_text())
+    for name, digest in selection["fitting_sha256"].items():
+        assert hashlib.sha256((R / "fitting" / name).read_bytes()).hexdigest() == digest
+    certificate = json.loads((R / "INDEPENDENT_OPTIMIZATION_CHECK.json").read_bytes())
+    assert (
+        certificate["status"] == "PASS"
+        and certificate["fitting_sha256"] == selection["fitting_sha256"]
+    )
     fit, _ = fitting_validation()
     test = source("test")
     assert set(test.participant).isdisjoint(
@@ -239,13 +246,6 @@ def test():
         dict.fromkeys(
             [selection["selected_model"], selection["clean_only_comparator"], "prior"]
         )
-    )
-    for name, digest in selection["fitting_sha256"].items():
-        assert hashlib.sha256((R / "fitting" / name).read_bytes()).hexdigest() == digest
-    certificate = json.loads((R / "INDEPENDENT_OPTIMIZATION_CHECK.json").read_bytes())
-    assert (
-        certificate["status"] == "PASS"
-        and certificate["fitting_sha256"] == selection["fitting_sha256"]
     )
     specs = {s["name"]: s for s in candidates()}
     predictions = [

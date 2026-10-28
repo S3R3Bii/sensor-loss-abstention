@@ -62,7 +62,19 @@ def main():
             for p in train.participant.unique()
         }
         weight = np.array([1 / counts[p] for p in train.participant])
-        weight *= len(weight) / weight.sum()
+        # The freeze hash binds exact computation bytes. Separately check the
+        # participant-balance identity rather than treating hash equality as it.
+        weight = weight * len(weight) / weight.sum()
+        for participant in counts:
+            assert math.isclose(
+                math.fsum(
+                    float(v)
+                    for v in weight[train.participant.to_numpy() == participant]
+                ),
+                len(weight) / len(counts),
+                rel_tol=1e-12,
+                abs_tol=1e-12,
+            )
         wn = weight / weight.sum()
         fingerprint = hashlib.sha256(
             x.astype("<f8").tobytes()

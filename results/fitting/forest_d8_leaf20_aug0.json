@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "specification": {
+    "name": "forest_d8_leaf20_aug0",
+    "kind": "forest",
+    "augmentation": false,
+    "max_depth": 8,
+    "min_samples_leaf": 20
+  },
+  "training_rows": 5322,
+  "training_fingerprint": "3106e02b9c10937b7926afcde9879ffb5e2fe41895e835b4ced15d45f5d7b854",
+  "classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "warnings": [],
+  "actual_trees": 160
+}

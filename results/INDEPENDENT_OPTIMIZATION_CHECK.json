@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "scope": "Eight logistic fits; convex objective/stationarity/Hessian/probability checks, not generalization proof",
+  "fitting_sha256": {
+    "logistic_C0.01_aug0.json": "96fd8d7e074d0dca8723ae6a6d919546044da3522e5b3d6e871526352bbb9764",
+    "logistic_C0.01_aug1.json": "b13583536a7d91e024cffd3cedeec0f9e7f0e2b71186effdda0804686b5e56b9",
+    "logistic_C0.1_aug0.json": "fb2bfe3f3d8cc9a0cf54a206758c41477bff4f11c26697a4dd14873900b6a2b9",
+    "logistic_C0.1_aug1.json": "b2f924ae0bc08f5886e40ff24fa213bfac955a463e705cf7b687f3a9806247f5",
+    "logistic_C10_aug0.json": "c5d88ef743c8291714175db9bd2c20ee9d51801a1657fd3c8fa0b37aebb1b246",
+    "logistic_C10_aug1.json": "e56a8263bd4da0b6e5c2601a2feb02bf111320556e2d5d0ec0f54463a37a0470",
+    "logistic_C1_aug0.json": "2df0a58947dfe4d33c78d9b76958492b10b39b4dda70ab42ecec05952c37aa0c",
+    "logistic_C1_aug1.json": "1376a1bf97e79b7f258570ea2dbd3f2dea746f28d0cc6b2c19849ca48607ba2c"
+  },
+  "evidence": [
+    {
+      "model": "logistic_C0.01_aug0",
+      "training_rows": 5322,
+      "maximum_gradient": 3.875345140277875e-17,
+      "minimum_hessian_eigenvalue": -8.202667061210644e-18,
+      "finite_difference_error": 3.765584469489751e-17,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C0.01_aug1",
+      "training_rows": 15966,
+      "maximum_gradient": 5.0628323927692006e-17,
+      "minimum_hessian_eigenvalue": -2.30257436381609e-17,
+      "finite_difference_error": 2.6838633328461808e-17,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C0.1_aug0",
+      "training_rows": 5322,
+      "maximum_gradient": 3.0140820395097023e-17,
+      "minimum_hessian_eigenvalue": -3.1461185941188867e-18,
+      "finite_difference_error": 8.941121040276135e-18,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C0.1_aug1",
+      "training_rows": 15966,
+      "maximum_gradient": 1.1474901703747292e-13,
+      "minimum_hessian_eigenvalue": 2.3633049465662102e-18,
+      "finite_difference_error": 2.6469542708030065e-12,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C10_aug0",
+      "training_rows": 5322,
+      "maximum_gradient": 4.800305118679571e-17,
+      "minimum_hessian_eigenvalue": -5.904378608810718e-18,
+      "finite_difference_error": 3.44922129898745e-17,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C10_aug1",
+      "training_rows": 15966,
+      "maximum_gradient": 2.474149357611921e-16,
+      "minimum_hessian_eigenvalue": -1.1156579205089376e-17,
+      "finite_difference_error": 2.7754361864612622e-12,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C1_aug0",
+      "training_rows": 5322,
+      "maximum_gradient": 2.164326592837655e-13,
+      "minimum_hessian_eigenvalue": 6.364104423464576e-19,
+      "finite_difference_error": 1.518414508168055e-13,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    },
+    {
+      "model": "logistic_C1_aug1",
+      "training_rows": 15966,
+      "maximum_gradient": 1.677802861921318e-16,
+      "minimum_hessian_eigenvalue": 1.0949671263007301e-17,
+      "finite_difference_error": 2.7273638535242715e-17,
+      "validation_probability_rows": 6090,
+      "all_checks": "PASS"
+    }
+  ]
+}
