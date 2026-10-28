@@ -1,0 +1,7 @@
+data/** -text
+results/** -text
+*.png binary
+*.pdf binary
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
