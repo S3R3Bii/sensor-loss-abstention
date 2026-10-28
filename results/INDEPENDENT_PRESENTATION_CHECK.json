@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "participant_display_rows": 81,
+  "reliability_bins": 90,
+  "independent_bin_definition": "Integer floor of confidence*10, capped at9; probability exports only",
+  "scope": "All display cells reconstructed; separate actual PNG/PDF visual review required"
+}

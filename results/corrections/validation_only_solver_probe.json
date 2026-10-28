@@ -1,0 +1,76 @@
+{
+  "status": "NUMERICAL_CAUSE_PROBE",
+  "original_head": "a6c41fe02417a54d8d2b9b8d61de952049ce1f4b",
+  "scope": "Two existing selected logistic configurations; fitting/validation only, no test labels or features read",
+  "objective": "Weighted mean multinomial log loss + sum(beta^2)/(2*C*sum(weights)); unpenalized intercepts",
+  "rows": [
+    {
+      "C": 10.0,
+      "augmentation": true,
+      "fitting_rows": 15966,
+      "validation_rows": 6090,
+      "attempts": [
+        {
+          "solver": "lbfgs",
+          "tol": 0.0001,
+          "max_iter": 1500,
+          "actual_iterations": [
+            580
+          ],
+          "gradient_inf": 9.670460822681872e-05,
+          "objective": 0.3669872234661698,
+          "seconds": 1.0081414000014775,
+          "warnings": []
+        },
+        {
+          "solver": "newton-cholesky",
+          "tol": 1e-12,
+          "max_iter": 100,
+          "actual_iterations": [
+            16
+          ],
+          "gradient_inf": 2.474149357611921e-16,
+          "objective": 0.36682482489665713,
+          "seconds": 1.1014952000114135,
+          "warnings": []
+        }
+      ],
+      "max_validation_probability_difference": 0.2810984279056938,
+      "validation_argmax_changes": 6
+    },
+    {
+      "C": 0.1,
+      "augmentation": false,
+      "fitting_rows": 5322,
+      "validation_rows": 6090,
+      "attempts": [
+        {
+          "solver": "lbfgs",
+          "tol": 0.0001,
+          "max_iter": 1500,
+          "actual_iterations": [
+            107
+          ],
+          "gradient_inf": 9.799950558769322e-05,
+          "objective": 0.2535565133703633,
+          "seconds": 0.06893849995685741,
+          "warnings": []
+        },
+        {
+          "solver": "newton-cholesky",
+          "tol": 1e-12,
+          "max_iter": 100,
+          "actual_iterations": [
+            10
+          ],
+          "gradient_inf": 3.0140820395097023e-17,
+          "objective": 0.2535320276281574,
+          "seconds": 0.21268029999919236,
+          "warnings": []
+        }
+      ],
+      "max_validation_probability_difference": 0.11384162170794743,
+      "validation_argmax_changes": 3
+    }
+  ]
+}

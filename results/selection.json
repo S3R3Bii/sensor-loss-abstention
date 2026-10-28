@@ -1,10 +1,21 @@
 {
-  "frozen_utc": "2026-10-28T19:02:00.909737+00:00",
+  "frozen_utc": "2026-10-28T21:38:32.848658+00:00",
+  "evaluation_status": "CORRECTED_RETROSPECTIVE_N1",
   "selected_model": "logistic_C10_aug1",
   "clean_only_comparator": "logistic_C0.1_aug0",
   "thresholds": {
     "logistic_C10_aug1": 0.5,
     "logistic_C0.1_aug0": 0.95
+  },
+  "fitting_sha256": {
+    "logistic_C0.01_aug0.json": "96fd8d7e074d0dca8723ae6a6d919546044da3522e5b3d6e871526352bbb9764",
+    "logistic_C0.01_aug1.json": "b13583536a7d91e024cffd3cedeec0f9e7f0e2b71186effdda0804686b5e56b9",
+    "logistic_C0.1_aug0.json": "fb2bfe3f3d8cc9a0cf54a206758c41477bff4f11c26697a4dd14873900b6a2b9",
+    "logistic_C0.1_aug1.json": "b2f924ae0bc08f5886e40ff24fa213bfac955a463e705cf7b687f3a9806247f5",
+    "logistic_C10_aug0.json": "c5d88ef743c8291714175db9bd2c20ee9d51801a1657fd3c8fa0b37aebb1b246",
+    "logistic_C10_aug1.json": "e56a8263bd4da0b6e5c2601a2feb02bf111320556e2d5d0ec0f54463a37a0470",
+    "logistic_C1_aug0.json": "2df0a58947dfe4d33c78d9b76958492b10b39b4dda70ab42ecec05952c37aa0c",
+    "logistic_C1_aug1.json": "1376a1bf97e79b7f258570ea2dbd3f2dea746f28d0cc6b2c19849ca48607ba2c"
   },
   "primary_objective": "Maximize mean participant-condition macro F1 on validation; name tie break",
   "fit_participants": [
@@ -32,7 +43,7 @@
     27,
     30
   ],
-  "source_test_partition": "Protected until test command",
+  "source_test_partition": "Previously inspected; N1 numerical correction, not an untouched test",
   "candidates": [
     {
       "name": "prior",
@@ -150,9 +161,9 @@
     "forest_workers": 2,
     "forest_features": "sqrt",
     "forest_bootstrap": true,
-    "logistic_max_iter": 1500,
-    "logistic_tol": 0.0001,
-    "logistic_solver": "lbfgs"
+    "logistic_max_iter": 100,
+    "logistic_tol": 1e-12,
+    "logistic_solver": "newton-cholesky"
   },
   "features": [
     "body_acc_x_mean",

@@ -1,0 +1,6 @@
+{
+  "stage": "First test-score export, before metrics were inspected",
+  "error": "TypeError from repeated n keyword while combining regression/classification and selective metric dictionaries",
+  "unchanged_prediction_sha256": "6ec911522ec944e3d7e38774c782614f822c9e98f776bdb4007377deaae97d9f",
+  "remedy": "Merge dictionaries explicitly and score the retained frozen predictions; do not refit or change selected model, features or threshold"
+}

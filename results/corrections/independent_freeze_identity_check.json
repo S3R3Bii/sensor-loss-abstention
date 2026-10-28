@@ -1,0 +1,8 @@
+{
+  "status": "INITIAL_IDENTITY_CHECK_FAILED_THEN_CORRECTED",
+  "stage": "validation_only_before_corrected_test",
+  "cause": "Independent hash construction used w*(n/sum(w)) while writer uses (w*n)/sum(w); floating-point byte difference, not unequal participant weighting",
+  "repair": "Reproduce the declared hash operation order, and independently check each participant weight total with scalar fsum",
+  "source_or_model_changes": "None; all8independent objective/gradient/Hessian/probability checks now pass",
+  "test_scoring_at_failure": "Not performed"
+}
