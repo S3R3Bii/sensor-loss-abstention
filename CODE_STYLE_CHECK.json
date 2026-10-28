@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "formatter": "Black25.1.0 private tool",
+  "files": [
+    {
+      "path": "src/analyze.py",
+      "sha256": "ad02a30cd3bcf84dd6862a980cd969bc5674282a6cc3dfcdf82d67742d3fbf49",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/check_reproduction.py",
+      "sha256": "943b86f2f33ec090252a4150ce413ad421d9bf9695cd11a7fb1bc42b127ea9e9",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/figures.py",
+      "sha256": "e0de1371928418c12dd5fa42ff50284ffeb443537f5955498abb9604530319e0",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/fitting.py",
+      "sha256": "fe09ea27472ef4e6fe85de512c73c78f4f9fcc589fbcd8d5924b910fa883f3b2",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/prepare.py",
+      "sha256": "1b2e87c6527bee1528bfb7c37f6fd7a304352e28129603c76e02bd03026da85a",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/retrieve.py",
+      "sha256": "e9a975bf85100fd404755ba4953847869a479786d262df0f8bc4ccc39b0036c3",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/verify.py",
+      "sha256": "14c307f4723d73dc556cda576c34a783020389a9cc62c34cad3910d5bf0f4940",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "src/verify_optimization.py",
+      "sha256": "a303b535f0ff2bd24e7ab539cc05f2a5f587990ed196e9ebed31fcd214961092",
+      "exact_ast_equal": true
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "sha256": "087b22883a9dff9f9be51b76a2df7b5922ea55e4b929e2bd3573322691bdbe8c",
+      "exact_ast_equal": true
+    }
+  ]
+}

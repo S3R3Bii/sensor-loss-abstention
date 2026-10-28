@@ -1,5 +1,5 @@
-data/** -text
-results/** -text
+data/** -text whitespace=cr-at-eol
+results/** -text whitespace=cr-at-eol
 *.png binary
 *.pdf binary
 *.py text eol=lf
