@@ -1,0 +1,211 @@
+{
+  "frozen_utc": "2026-10-28T19:02:00.909737+00:00",
+  "selected_model": "logistic_C10_aug1",
+  "clean_only_comparator": "logistic_C0.1_aug0",
+  "thresholds": {
+    "logistic_C10_aug1": 0.5,
+    "logistic_C0.1_aug0": 0.95
+  },
+  "primary_objective": "Maximize mean participant-condition macro F1 on validation; name tie break",
+  "fit_participants": [
+    1,
+    5,
+    6,
+    7,
+    11,
+    14,
+    16,
+    17,
+    19,
+    21,
+    23,
+    25,
+    26,
+    28,
+    29
+  ],
+  "validation_participants": [
+    3,
+    8,
+    15,
+    22,
+    27,
+    30
+  ],
+  "source_test_partition": "Protected until test command",
+  "candidates": [
+    {
+      "name": "prior",
+      "kind": "prior",
+      "augmentation": false
+    },
+    {
+      "name": "logistic_C0.01_aug0",
+      "kind": "logistic",
+      "augmentation": false,
+      "C": 0.01
+    },
+    {
+      "name": "logistic_C0.1_aug0",
+      "kind": "logistic",
+      "augmentation": false,
+      "C": 0.1
+    },
+    {
+      "name": "logistic_C1_aug0",
+      "kind": "logistic",
+      "augmentation": false,
+      "C": 1.0
+    },
+    {
+      "name": "logistic_C10_aug0",
+      "kind": "logistic",
+      "augmentation": false,
+      "C": 10.0
+    },
+    {
+      "name": "forest_d8_leaf5_aug0",
+      "kind": "forest",
+      "augmentation": false,
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    {
+      "name": "forest_d8_leaf20_aug0",
+      "kind": "forest",
+      "augmentation": false,
+      "max_depth": 8,
+      "min_samples_leaf": 20
+    },
+    {
+      "name": "forest_d16_leaf5_aug0",
+      "kind": "forest",
+      "augmentation": false,
+      "max_depth": 16,
+      "min_samples_leaf": 5
+    },
+    {
+      "name": "forest_d16_leaf20_aug0",
+      "kind": "forest",
+      "augmentation": false,
+      "max_depth": 16,
+      "min_samples_leaf": 20
+    },
+    {
+      "name": "logistic_C0.01_aug1",
+      "kind": "logistic",
+      "augmentation": true,
+      "C": 0.01
+    },
+    {
+      "name": "logistic_C0.1_aug1",
+      "kind": "logistic",
+      "augmentation": true,
+      "C": 0.1
+    },
+    {
+      "name": "logistic_C1_aug1",
+      "kind": "logistic",
+      "augmentation": true,
+      "C": 1.0
+    },
+    {
+      "name": "logistic_C10_aug1",
+      "kind": "logistic",
+      "augmentation": true,
+      "C": 10.0
+    },
+    {
+      "name": "forest_d8_leaf5_aug1",
+      "kind": "forest",
+      "augmentation": true,
+      "max_depth": 8,
+      "min_samples_leaf": 5
+    },
+    {
+      "name": "forest_d8_leaf20_aug1",
+      "kind": "forest",
+      "augmentation": true,
+      "max_depth": 8,
+      "min_samples_leaf": 20
+    },
+    {
+      "name": "forest_d16_leaf5_aug1",
+      "kind": "forest",
+      "augmentation": true,
+      "max_depth": 16,
+      "min_samples_leaf": 5
+    },
+    {
+      "name": "forest_d16_leaf20_aug1",
+      "kind": "forest",
+      "augmentation": true,
+      "max_depth": 16,
+      "min_samples_leaf": 20
+    }
+  ],
+  "fixed_settings": {
+    "seed": 20261028,
+    "forest_trees": 160,
+    "forest_workers": 2,
+    "forest_features": "sqrt",
+    "forest_bootstrap": true,
+    "logistic_max_iter": 1500,
+    "logistic_tol": 0.0001,
+    "logistic_solver": "lbfgs"
+  },
+  "features": [
+    "body_acc_x_mean",
+    "body_acc_x_sd",
+    "body_acc_x_rms",
+    "body_acc_x_range",
+    "body_acc_x_mean_abs_step",
+    "body_acc_y_mean",
+    "body_acc_y_sd",
+    "body_acc_y_rms",
+    "body_acc_y_range",
+    "body_acc_y_mean_abs_step",
+    "body_acc_z_mean",
+    "body_acc_z_sd",
+    "body_acc_z_rms",
+    "body_acc_z_range",
+    "body_acc_z_mean_abs_step",
+    "total_acc_x_mean",
+    "total_acc_x_sd",
+    "total_acc_x_rms",
+    "total_acc_x_range",
+    "total_acc_x_mean_abs_step",
+    "total_acc_y_mean",
+    "total_acc_y_sd",
+    "total_acc_y_rms",
+    "total_acc_y_range",
+    "total_acc_y_mean_abs_step",
+    "total_acc_z_mean",
+    "total_acc_z_sd",
+    "total_acc_z_rms",
+    "total_acc_z_range",
+    "total_acc_z_mean_abs_step",
+    "body_gyro_x_mean",
+    "body_gyro_x_sd",
+    "body_gyro_x_rms",
+    "body_gyro_x_range",
+    "body_gyro_x_mean_abs_step",
+    "body_gyro_y_mean",
+    "body_gyro_y_sd",
+    "body_gyro_y_rms",
+    "body_gyro_y_range",
+    "body_gyro_y_mean_abs_step",
+    "body_gyro_z_mean",
+    "body_gyro_z_sd",
+    "body_gyro_z_rms",
+    "body_gyro_z_range",
+    "body_gyro_z_mean_abs_step",
+    "acc_present",
+    "gyro_present"
+  ],
+  "conditions": [
+    "intact",
+    "acc_missing",
+    "gyro_missing"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "stage": "validation before any test command",
+  "issue": "Weighted StandardScaler raised invalid-sqrt RuntimeWarning on constant modality-presence indicators in clean-only fitting",
+  "remedy": "Drop exactly constant fitting columns before scaling; retain the same declared candidate grid and participant split",
+  "original_validation_results_retained": true
+}

@@ -31,3 +31,7 @@ Freeze candidate, threshold and fitting IDs in a committed artifact before the f
 ## Acceptance criteria
 
 Source hashes and window counts reconcile; participant partitions are disjoint; all 17 candidate outcomes and parameters are retained; fitting never consumes test rows; independent calculations reproduce selection, F1, Brier, log loss and selective metrics; error cases are tested; quantitative figures and private manuscript are rendered and inspected; public files pass a bounded privacy/rights scan. A low-coverage or missed 90% target remains a valid negative finding. Novelty is a question-specific evaluation, not a claim of a new algorithm or exhaustive research gap.
+
+## Pre-test numerical correction
+
+Initial validation emitted a weighted-scaler square-root warning on constant presence-indicator columns in clean-only training. The original validation search and selection are retained. Exactly constant columns are now identified and removed using fitting data alone before logistic scaling. The participant split, candidate grid, objectives and threshold rules remain unchanged; validation is repeated before examining any test result.
