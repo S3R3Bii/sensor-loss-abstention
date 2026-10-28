@@ -6,6 +6,10 @@ __pycache__/
 .venv/
 data/source.zip
 data/cache/
+data/train/
+data/test/
+data/README.txt
+data/activity_labels.txt
 private/
 *.tex
 *.aux

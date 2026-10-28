@@ -1,0 +1,178 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/240/human%2Bactivity%2Brecognition%2Busing%2Bsmartphones.zip",
+  "retrieved_utc": "2026-10-28T19:00:45.861115+00:00",
+  "archive_sha256": "c00b803081a5c797cd5e4b83700a9810b38d53d9d84e01917e090e1fdbc81031",
+  "license": "CC BY 4.0",
+  "doi": "10.24432/C54S4K",
+  "source_landing": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+  "files": [
+    {
+      "file": "data/source/activity_labels.txt.gz",
+      "original_file": "activity_labels.txt",
+      "bytes": 80,
+      "sha256": "f6e6b292704438261f0283b2a82659ab0661447dc16520938bdf379ed1bf8de0",
+      "compressed_sha256": "5f10d039ec3fc60b4f1846443781fd6664ef6ce9dd74b984564626274cea69c2"
+    },
+    {
+      "file": "data/source/README.txt.gz",
+      "original_file": "README.txt",
+      "bytes": 6304,
+      "sha256": "eaee53f45825f349681a1a1b92a997a0082648f9b5bf93ddb3290caeede4b3a8",
+      "compressed_sha256": "7b56a89faeef0f53ec872e780910eeefa4c433b79ab6d5e17c85e52752a43efb"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/body_acc_x_test.txt.gz",
+      "original_file": "test/Inertial Signals/body_acc_x_test.txt",
+      "bytes": 6041350,
+      "sha256": "c07eb8ee8c76eafcd94b42111082700e10f4956b769fbbb0d5413c14f38774fa",
+      "compressed_sha256": "f9498aadc301e870d98ddeab2a45add676e4348bd1b1bcea64ba90fe82ca04c0"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/body_acc_y_test.txt.gz",
+      "original_file": "test/Inertial Signals/body_acc_y_test.txt",
+      "bytes": 6041350,
+      "sha256": "0ed0057b41f6870b16a6953ef17f6d42bc5542fa304319fb6b7f424dd3380f0b",
+      "compressed_sha256": "f983d5af9f20d51a7c55c0e9b88cc613e2cd8247a54834a5bcee2284f6a51985"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/body_acc_z_test.txt.gz",
+      "original_file": "test/Inertial Signals/body_acc_z_test.txt",
+      "bytes": 6041350,
+      "sha256": "a2b58317137533bdbf2342bf301ae854c15b1168259cc7b582c2dd131e3d81d5",
+      "compressed_sha256": "a05ff0ee34aa23e7441600cf4974c24c02cd6c2037508305949d3a6d275415f9"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/body_gyro_x_test.txt.gz",
+      "original_file": "test/Inertial Signals/body_gyro_x_test.txt",
+      "bytes": 6041350,
+      "sha256": "fb4f27f13e4e08055043f34ed52f6d8bbe8ebce7dff9475ff92be03b3d3f607c",
+      "compressed_sha256": "9c1ee239727310cf94e2651e481f4b8d66e1bd819d2d8a9c3be03acf88fe9a2c"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/body_gyro_y_test.txt.gz",
+      "original_file": "test/Inertial Signals/body_gyro_y_test.txt",
+      "bytes": 6041350,
+      "sha256": "d2501166b2b1f645b51f722fcf31f3aa1e9a3edae18d49322612f37b4495cb80",
+      "compressed_sha256": "1b1a18f130ff876c5925d9a736b896596177f2dcdb868bc2800660051892a690"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/body_gyro_z_test.txt.gz",
+      "original_file": "test/Inertial Signals/body_gyro_z_test.txt",
+      "bytes": 6041350,
+      "sha256": "90a18ce534be0dfc616cefdac9874e2ea599ae20421cd161361c2a33f40cfa5e",
+      "compressed_sha256": "e493e8c1f03ad818abf924b556a3758c822beea7dc6fd8dcee7dc304a841a74d"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/total_acc_x_test.txt.gz",
+      "original_file": "test/Inertial Signals/total_acc_x_test.txt",
+      "bytes": 6041350,
+      "sha256": "ea71c339c828561bc1dc6f7301a54aeb7e61e6312cb2387ebaea832ffd04203d",
+      "compressed_sha256": "43be62589c04df8b2d30a88de140410027844c414287ec191cd21fe178eca52d"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/total_acc_y_test.txt.gz",
+      "original_file": "test/Inertial Signals/total_acc_y_test.txt",
+      "bytes": 6041350,
+      "sha256": "32692c617b40c16e020bf059a316bd6bf3a63d771f030dfc5fa4003f390b6f67",
+      "compressed_sha256": "92bc32a6eacea249a2f86bc2f70bea470641fe3467ae0cdd6c7b82846d196cdb"
+    },
+    {
+      "file": "data/source/test/Inertial Signals/total_acc_z_test.txt.gz",
+      "original_file": "test/Inertial Signals/total_acc_z_test.txt",
+      "bytes": 6041350,
+      "sha256": "622ddf1d9532fbe340472074ef1edd1a2f58aa332682542bb36a8c03c9ba9e04",
+      "compressed_sha256": "f2d12a1653075e499536693c519a1048c885b76229a21c2e43f346d6d7c798f2"
+    },
+    {
+      "file": "data/source/test/subject_test.txt.gz",
+      "original_file": "test/subject_test.txt",
+      "bytes": 7934,
+      "sha256": "63b8c577f4a85431c06bd87f6384608c90a9f72f05c7956dd21255dc63515c07",
+      "compressed_sha256": "5d8cc963ad557cf8bb8f296c7de184b6fdfaa92b863c277c8c4f972765f229b2"
+    },
+    {
+      "file": "data/source/test/y_test.txt.gz",
+      "original_file": "test/y_test.txt",
+      "bytes": 5894,
+      "sha256": "2a94cb53ca46b956c1b2aebd4a09a72badd8a8e9ea9cdfe9f31b3306a08666bb",
+      "compressed_sha256": "bd2ea0e239b899056d4b0d3cf4d3fcb5323af78496a3b41a0321425cd72e533a"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/body_acc_x_train.txt.gz",
+      "original_file": "train/Inertial Signals/body_acc_x_train.txt",
+      "bytes": 15071600,
+      "sha256": "89f7bf5e360384804439d00f463dd2f717c452c683cac6c0a09b1a191d8ce4a2",
+      "compressed_sha256": "35bb154782e57d602d5138e3c56f56ff6ec58f88fc384b940250f96bf67b83ca"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/body_acc_y_train.txt.gz",
+      "original_file": "train/Inertial Signals/body_acc_y_train.txt",
+      "bytes": 15071600,
+      "sha256": "4775a586a5a1acc6706edee08c685835daea7bc1d9274e7e7e8d660fea173944",
+      "compressed_sha256": "1c958cc2d10606d51de9ef32d6490293dfa46552d577c6b3e4a8cbf23d70baf2"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/body_acc_z_train.txt.gz",
+      "original_file": "train/Inertial Signals/body_acc_z_train.txt",
+      "bytes": 15071600,
+      "sha256": "9155718981ff1331dcd2d30aee545905ffba71af9ece5a08d6dfdeeb7d2ec4fb",
+      "compressed_sha256": "57d68e71446e7ec5688533ca21eef6676685c5a80900df6e456695e88b6909cb"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/body_gyro_x_train.txt.gz",
+      "original_file": "train/Inertial Signals/body_gyro_x_train.txt",
+      "bytes": 15071600,
+      "sha256": "423f6806f09059de3c1f443cf1d04a3c3907dc7ee17b5d296ed775b07aa6cde6",
+      "compressed_sha256": "c2afc6997a8c95437b6db963be95b216fe1d0771ec87381a1cc8f9494bc449d4"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/body_gyro_y_train.txt.gz",
+      "original_file": "train/Inertial Signals/body_gyro_y_train.txt",
+      "bytes": 15071600,
+      "sha256": "42419d8aaefd1a319561998defb167bfa57f7e51d656b6012d5a59c0b10f5260",
+      "compressed_sha256": "90b985e2e5fc4e9497d488fb28b04a0f85f0b6fb101b1ee738141f8aad49edf4"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/body_gyro_z_train.txt.gz",
+      "original_file": "train/Inertial Signals/body_gyro_z_train.txt",
+      "bytes": 15071600,
+      "sha256": "05bc629faee918b0f5b99cd2e68f860c785889627ec8efeb85c29282f3963988",
+      "compressed_sha256": "1fb387db302769e68a50e2e6bc71acbba3b5fd19db9db2ffe5a8588a7760ae2d"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/total_acc_x_train.txt.gz",
+      "original_file": "train/Inertial Signals/total_acc_x_train.txt",
+      "bytes": 15071600,
+      "sha256": "41a7fe1da7b529cc6c2c3d7df97c98752bea74d7a142673dd59c7820fad3b5e6",
+      "compressed_sha256": "42bd2389b23639f2660e5cf10eabd6c40b0d7fb3c08c35bc6d72908d50acd2e3"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/total_acc_y_train.txt.gz",
+      "original_file": "train/Inertial Signals/total_acc_y_train.txt",
+      "bytes": 15071600,
+      "sha256": "03bd3a80c0c04bf354597ad62920158b4b6605e157d856a1aab9abb357d40c5d",
+      "compressed_sha256": "16de2f49057abb79c82e5a900a37e2b1772d6ea4b9e76de831c2d951c538bee5"
+    },
+    {
+      "file": "data/source/train/Inertial Signals/total_acc_z_train.txt.gz",
+      "original_file": "train/Inertial Signals/total_acc_z_train.txt",
+      "bytes": 15071600,
+      "sha256": "5be3b593f88d49bb8f740c1c41379fc928ea8608d706594ebbba81cd800a5a33",
+      "compressed_sha256": "537b536c13ae1a7c2ce3f29c92d06242fd41156b903aadea91ddcb1507178c6b"
+    },
+    {
+      "file": "data/source/train/subject_train.txt.gz",
+      "original_file": "train/subject_train.txt",
+      "bytes": 20152,
+      "sha256": "66e1e2fbe9b396fa5155f531dc3348c803f503be663e2318772d49947db9153a",
+      "compressed_sha256": "006ca42b62a63870eb5ecfec61bbbf685e2c2413635cda8d48a1cc8280f1fd10"
+    },
+    {
+      "file": "data/source/train/y_train.txt.gz",
+      "original_file": "train/y_train.txt",
+      "bytes": 14704,
+      "sha256": "415b3357e2e2d5e70a45c781947c6bdd80e0410a579d862eedcd6bbce3c694ef",
+      "compressed_sha256": "40f41f49abd0ffd0c4aaed65390ce7c0e446b4c4c592ccbdca63b306d2c20d96"
+    }
+  ]
+}
