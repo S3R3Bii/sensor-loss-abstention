@@ -1,0 +1,12 @@
+{
+  "tested_head": "e630520833a27f1708b578af048b186fb73614e0",
+  "github_run": "https://github.com/S3R3Bii/sensor-loss-abstention/actions/runs/40752165410",
+  "state": "FAILED_CROSS_PLATFORM_REFIT_COMPARISON",
+  "independent_exported_metric_verification": "PASS in the Linux run",
+  "first_comparison_failure": "test_summary.json.metrics[3].participant_condition_macro_f1",
+  "released_value": 0.7153637570406417,
+  "linux_refit_value": 0.7149362473029179,
+  "selected_model_unchanged": true,
+  "targeted_remedy": "Pin SciPy, joblib and threadpoolctl to the versions used by the original Windows fitting environment; retain the original numerical comparison tolerance and search/test results",
+  "remedy_status": "Awaiting fresh CI evidence"
+}
