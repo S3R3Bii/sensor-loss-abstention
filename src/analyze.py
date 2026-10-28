@@ -99,14 +99,18 @@ def test():
     selection=json.loads((R/'selection.json').read_text());fit,_=fitting_validation();test=source('test')
     assert set(test.participant).isdisjoint(selection['fit_participants']+selection['validation_participants'])
     evaluation=conditions(test);export(test,R/'test_features.csv.gz')
-    specs={s['name']:s for s in candidates()};predictions=[]
-    for name in dict.fromkeys([selection['selected_model'],selection['clean_only_comparator'],'prior']):
-        predictions.append(export_pred(specs[name],fit,evaluation))
-    combined=pd.concat(predictions,ignore_index=True);export(combined,R/'test_predictions.csv.gz')
+    names=list(dict.fromkeys([selection['selected_model'],selection['clean_only_comparator'],'prior']))
+    if (R/'test_predictions.csv.gz').exists():
+        combined=pd.read_csv(R/'test_predictions.csv.gz')
+        assert set(combined.model)==set(names) and len(combined)==len(evaluation)*len(names)
+    else:
+        specs={s['name']:s for s in candidates()};predictions=[]
+        for name in names:predictions.append(export_pred(specs[name],fit,evaluation))
+        combined=pd.concat(predictions,ignore_index=True);export(combined,R/'test_predictions.csv.gz')
     records=[];reliability=[]
     for (name,condition),group in combined.groupby(['model','condition']):
         threshold=selection['thresholds'].get(name,0.)
-        records.append(dict(model=name,condition=condition,**score(group),**selective(group,threshold)))
+        records.append(dict(model=name,condition=condition,**{**score(group),**selective(group,threshold)}))
         p=group[PROBS].to_numpy();conf=p.max(axis=1);good=p.argmax(axis=1)==group.label.to_numpy()
         for lo in np.arange(0,1,.1):
             ix=(conf>=lo)&(conf<lo+.1 if lo<.9 else conf<=1.)
